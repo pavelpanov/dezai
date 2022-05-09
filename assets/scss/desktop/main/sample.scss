@@ -1,0 +1,128 @@
+section.sample {
+  padding-bottom: 80px;
+
+  .container {
+    display: flex;
+    min-height: 483px;
+    background-size: 608px 483px;
+    background-repeat: no-repeat;
+    background-position: right 20px top;
+
+    .left {
+      flex: 454px 0 0;
+      padding-top: 58px;
+
+      .title {
+        margin-bottom: 25px;
+        font: 500 32px/40px 'Montserrat';
+        letter-spacing: 0;
+        text-transform: none;
+      }
+
+      img {
+        display: none;
+      }
+
+      ul {
+        margin-bottom: 31px;
+
+        li {
+          position: relative;
+          list-style: none;
+          margin-bottom: 16px;
+          padding-left: 25px;
+          font: 16px/24px 'Montserrat';
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 4px;
+            left: -1px;
+            width: 18px;
+            height: 13px;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDE4IDEzIiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTEgNi43NjI4TDYuMTYwNjkgMTJMMTcgMSIgc3Ryb2tlPSIjNDNhZTU5IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+
+      .sample-form {
+        form {
+          span {
+            display: flex;
+            align-items: center;
+            min-height: 32px;
+            margin-bottom: 12px;
+            padding-left: 40px;
+            // background-image: image_url('dezai/main/sample/pdf.svg');
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 32px;
+            font: 500 22px 'Montserrat';
+            color: #3a3029;
+          }
+
+          .row {
+            display: flex;
+            align-items: center;
+
+            input {
+              margin-right: 12px;
+              padding-left: 20px;
+              width: 100%;
+              border: 1px solid #d8d6d4;
+              border-radius: 4px;
+              height: 49px;
+              font: 16px/24px 'Montserrat';
+
+              &.invalid {
+                border-color: #f00;
+              }
+            }
+
+            a.btn {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 40px;
+              border-radius: 20px;
+              padding: 0 32px;
+              background-color: var(--primary-color);
+              font: 600 13px 'Montserrat';
+              white-space: nowrap;
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .sample-form-success {
+        display: none;
+        padding: 79px 70px 0 0;
+        // background-image: image_url('dezai/main/sample/ok.svg');
+        background-repeat: no-repeat;
+        background-position: left 6px top 22px;
+        background-size: 49px 35px;
+        font: 16px/24px 'Montserrat';
+
+        .back {
+          display: flex;
+          align-items: center;
+          margin-top: 31px;
+          min-height: 24px;
+          padding-left: 29px;
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTE5IDEySDUiIHN0cm9rZT0iIzNBMzAyOSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTEyIDE5TDUgMTJMMTIgNSIgc3Ryb2tlPSIjM0EzMDI5IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=');
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-size: 24px;
+          font: 13px 'Montserrat';
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

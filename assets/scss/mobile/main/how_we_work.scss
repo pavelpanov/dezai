@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+
+  .how-we-work {
+    padding: 10px 0 20px;
+
+    .container {
+      .title {
+        margin-bottom: 21px;
+        font: 24px 'Montserrat';
+        font-weight: 500;
+      }
+
+      .list {
+        .item {
+          display: block;
+          margin-bottom: 28px;
+
+          img {
+            display: none;
+          }
+
+          .info {
+            flex: none;
+
+            .num {
+              margin-bottom: 9px;
+              font: 32px 'Montserrat';
+              font-weight: bold;
+            }
+
+            .name {
+              margin-bottom: 15px;
+              font: 18px/24px 'Montserrat';
+              font-weight: 500;
+            }
+
+            img {
+              display: block;
+              margin-bottom: 15px;
+              width: 100%;
+            }
+
+            .desc {
+              font: 14px/20px 'Montserrat';
+            }
+          }
+        }
+      }
+    }
+  }
+}

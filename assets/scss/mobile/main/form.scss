@@ -1,0 +1,125 @@
+@media screen and (max-width: 768px) {
+
+  .dezai-contact-form {
+    height: auto;
+    padding: 48px 0;
+  }
+
+  .form {
+    width: 100%;
+    padding: 24px 16px;
+
+    .form-title {
+      margin: 0 0 12px;
+      font: 500 18px/24px 'Montserrat';
+    }
+
+    .form-subtitle {
+      margin: 0 0 48px;
+      font: 14px/20px 'Montserrat';
+    }
+
+    .input-block {
+      height: 50px;
+      margin: 0 auto 39px;
+      width: 100%;
+
+      .placeholder {
+        padding: 0;
+        font: 500 12px 'Montserrat';
+      }
+
+      // .placeholder-active {
+      //   height: 40%;
+      //   padding: 0 0 0 16px;
+      //   font: 13px/28px 'RCL';
+      // }
+
+      input[type='text'] {
+        height: 49px;
+        font: 13px 'Montserrat';
+        padding: 0 0 0 30px;
+      }
+
+      input.focused {
+        padding: 0 12px;
+      }
+
+      .timezone {
+        font: 12px 'Montserrat';
+      }
+    }
+
+    .communication {
+      margin: 0 0 24px;
+
+      .name {
+        margin-bottom: 13px;
+        font: 14px 'Montserrat';
+      }
+
+      input[type='checkbox'] + label {
+        margin-bottom: 6px;
+        min-height: 25px;
+        padding: 4px 0 0 55px;
+        font: 14px 'Montserrat';
+        background-position: left 25px top;
+        background-size: 25px;
+
+        span {
+          font: 13px/20px 'Montserrat';
+        }
+
+        &::before {
+          top: 4px;
+        }
+      }
+    }
+
+    .submit {
+      max-width: 100%;
+      min-width: 100%;
+      margin: 0 0 11px;
+    }
+
+    .agree {
+      font: 11px 'Montserrat';
+    }
+
+    .communication-error {
+      width: calc(100% - 32px);
+    }
+
+    .success_mess {
+      padding: 152px 0 0 20px;
+
+      .success-title {
+        padding: 62px 0 0 0;
+        font: 500 18px 'Montserrat';
+      }
+
+      span {
+        display: block;
+        margin: 11px 0 0 0;
+        font: 14px/18px 'Montserrat';
+      }
+
+      .close {
+        top: 1px;
+        right: 12px;
+        width: 14px;
+        height: 14px;
+        background-size: 14px;
+      }
+    }
+
+    .visible {
+      padding: 143px 0 0 20px;
+
+      .close {
+        top: 12px;
+        transition: all 0.25s ease-in-out;
+      }
+    }
+  }
+}

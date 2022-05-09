@@ -1,0 +1,132 @@
+@media screen and (max-width: 768px) {
+
+  .dezai-body {
+    .wrap-dezai {
+      .fancybox-close {
+        top: 12px !important;
+        right: 12px !important;
+      }
+
+      .popup {
+        padding: 24px 16px 17px;
+        max-width: 100%;
+        min-width: 280px;
+
+        .title {
+          display: block;
+          margin: 0 0 12px;
+          font: 500 18px/24px 'Montserrat';
+        }
+
+        .subtitle {
+          font: 14px/20px 'Montserrat';
+          margin: 0 0 46px 0;
+        }
+
+        .form-row {
+          &:not(:last-child) {
+            margin: 0 0 16px 0;
+          }
+
+          .input-block {
+            height: 50px;
+            margin: 0 auto 39px;
+
+            .placeholder {
+              top: -22px;
+              font: 500 13px 'Montserrat';
+            }
+
+            input[type='text'] {
+              height: 48px;
+              padding: 3px 12px 0;
+              font: 14px 'Montserrat';
+            }
+
+            .timezone {
+              font: 12px 'Montserrat';
+            }
+          }
+
+          .submit-btn {
+            margin: -18px 0 11px;
+          }
+
+          .agree {
+            font: 11px 'Montserrat';
+          }
+        }
+
+        .communication {
+          margin: -23px 0 43px;
+
+          .name {
+            margin-bottom: 13px;
+            font: 14px 'Montserrat';
+          }
+
+          input[type='checkbox'] + label {
+            margin-bottom: 5px;
+            min-height: 25px;
+            padding: 4px 0 0 55px;
+            font: 14px 'Montserrat';
+            background-position: left 25px top;
+            background-size: 25px;
+
+            span {
+              font: 13px/22px 'Montserrat';
+            }
+
+            &::before {
+              top: 5px;
+            }
+          }
+        }
+
+        .communication-error {
+          bottom: 5px;
+          font: 11px 'Montserrat';
+        }
+      }
+    }
+
+    .wrap-request-done {
+      .fancybox-close {
+        top: 12px !important;
+        right: 12px !important;
+      }
+
+      #request_done {
+        max-width: 100%;
+        min-width: auto;
+        padding: 100px 30px;
+
+        .title {
+          padding: 73px 0 0 0;
+          font: 500 18px 'Montserrat';
+          text-align: left;
+          background-size: 48px;
+        }
+
+        .subtitle {
+          margin: 14px 0 0 0;
+          font: 14px/18px 'Montserrat';
+        }
+      }
+    }
+  }
+
+  .dezai-body.ctrl-main {
+    .select2-container {
+      .select2-dropdown {
+        .select2-results {
+          ul {
+            li {
+              border-top: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

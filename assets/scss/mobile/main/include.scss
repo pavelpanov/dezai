@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+
+  .include {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 0 48px;
+
+    .container {
+      width: 100%;
+      margin-left: 0;
+      padding: 33px 20px 0;
+
+      .title {
+        margin-bottom: 15px;
+        font: 500 24px/32px 'Montserrat';
+      }
+
+      ul {
+        li {
+          margin-bottom: 16px;
+          padding-left: 16px;
+          font: 14px/20px 'Montserrat';
+
+          &::after {
+            top: 6px;
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+
+      .add {
+        display: block;
+        height: auto;
+        padding: 15px 16px 13px 16px;
+        font: 500 14px/20px 'Montserrat';
+
+        span {
+          font: 600 18px/20px 'Montserrat';
+        }
+      }
+    }
+
+    .picture {
+      position: relative;
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      width: 100%;
+      padding-top: 63%;
+
+      img {
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}

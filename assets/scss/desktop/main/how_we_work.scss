@@ -1,0 +1,59 @@
+.how-we-work {
+  padding: 55px 0 0;
+
+  * {
+    color: #3a3029;
+  }
+
+  .container {
+    .title {
+      margin-bottom: 33px;
+      font: 500 32px 'Montserrat';
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .list {
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 62px;
+
+        img {
+          flex: 724px 0 0;
+          display: block;
+          margin-bottom: 18px;
+          border-radius: 8px;
+          object-position: center;
+          object-fit: cover;
+        }
+
+        .info {
+          flex: 346px 0 0;
+
+          .num {
+            margin-bottom: 13px;
+            font: 40px 'Montserrat';
+            font-weight: bold;
+            color: var(--primary-color);
+          }
+
+          .name {
+            margin-bottom: 24px;
+            font: 500 22px/28px 'Montserrat';
+          }
+
+          img {
+            display: none;
+          }
+
+          .desc {
+            font: 16px/24px 'Montserrat';
+            color: #7d7978;
+          }
+        }
+      }
+    }
+  }
+}

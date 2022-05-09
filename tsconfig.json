@@ -1,0 +1,28 @@
+{
+	/** 
+	 * This configuration applies to both:
+	 * - building frontend bundle via webpack
+	 * - running typescript during build with nodejs
+	 *
+	 * See frontend-specific overrides in tsconfig.frontend.json  
+	 */
+	"compilerOptions": {
+		/** nodejs until latest versions cannot consume ESM, so use commonjs */
+		"module": "commonjs",
+		"target": "es6",
+		/** needs to be true to allow tests debugging */
+		"sourceMap": false,
+		"strict": true,
+		/** Allows loading ESM from node_modules */
+		"moduleResolution": "node",
+		/** Allow importing some typed js packages */
+		"allowSyntheticDefaultImports": true,
+		/** Allow importing JSON files */
+		"resolveJsonModule": true,
+		/** Allow importing commonjs modules from TS */
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
+	},
+	"exclude": ["node_modules"]
+}

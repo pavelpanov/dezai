@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+
+  section.adventages {
+    padding: 41px 0 40px;
+
+    .container {
+      display: block;
+
+      .item {
+        display: inline-flex;
+        align-items: center;
+        flex: none;
+        min-height: 48px;
+        padding-left: 64px;
+        background-size: 48px;
+        font: 14px/20px 'Montserrat';
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

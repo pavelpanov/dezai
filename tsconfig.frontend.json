@@ -1,0 +1,10 @@
+{
+	/** This configuration overrides are applied when building frontend bundle via webpack */
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		/** Webpack is responsible for compiling esmodules to commonjs, so TS should emit esmodules. This allows for better tree-shaking */
+		"module": "ES2015",
+		/** Webpack will consume these sourcemaps for internal tooling. Emitting sourcemaps is configured in webpack config */
+		"sourceMap": true,
+	}
+}

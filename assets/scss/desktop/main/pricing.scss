@@ -1,0 +1,60 @@
+.pricing {
+  padding: 80px 0 37px;
+
+  * {
+    color: #3a3029;
+  }
+
+  .container {
+    .title {
+      margin-bottom: 26px;
+      font: 500 32px 'Montserrat';
+      letter-spacing: 0;
+      text-transform: none;
+
+      span {
+        font: 600 32px 'Montserrat';
+        color: var(--primary-color);
+      }
+    }
+
+    .subtitle {
+      font: 16px/24px 'Montserrat';
+      margin-bottom: 28px;
+
+      span {
+        font: 600 22px/24px 'Montserrat';
+        color: var(--primary-color);
+      }
+    }
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .item {
+        flex: 350px 0 0;
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        padding-left: 82px;
+        background-size: 66px;
+        background-repeat: no-repeat;
+        background-position: left center;
+
+        .name {
+          font: 500 22px/28px 'Montserrat';
+        }
+
+        .icon {
+          color: var(--primary-color);
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 66px;
+        }
+      }
+    }
+  }
+}

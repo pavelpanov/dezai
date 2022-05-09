@@ -1,0 +1,382 @@
+.dezai-body {
+  .wrap-dezai {
+    border-radius: 7px;
+    overflow: hidden !important;
+
+    * {
+      color: #3a3029;
+    }
+
+    .popup-wrapper {
+      display: none;
+    }
+
+    .fancybox-skin {
+      border-radius: 0 !important;
+    }
+
+    .fancybox-close {
+      // background: image-url('dezai/shared/popup-close.svg') !important;
+      background-size: 34px !important;
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      width: 34px !important;
+      height: 34px !important;
+      top: 12px !important;
+      right: 12px !important;
+      border: none !important;
+      display: block !important;
+    }
+
+    .fancybox-skin {
+      padding: 0px !important;
+    }
+
+    .popup {
+      max-width: 331px;
+      min-width: 331px;
+      padding: 25px 24px 24px;
+      text-align: left;
+      background-color: #fff;
+
+      .title {
+        display: inline-block;
+        position: relative;
+        width: 180px;
+        margin: 0 0 6px;
+        font: 22px/28px 'Montserrat';
+        letter-spacing: 0;
+        text-transform: none;
+        text-align: left;
+        white-space: normal;
+      }
+
+      .subtitle {
+        font: 16px/24px 'Montserrat';
+        margin: 0 0 45px 0;
+      }
+
+      .form-row {
+        &:not(:last-child) {
+          margin: 0 0 16px 0;
+        }
+
+        .input-block {
+          display: flex;
+          flex-direction: column-reverse;
+          position: relative;
+          height: 50px;
+          margin: 0 auto 38px;
+          width: 100%;
+
+          &.input-time {
+            padding: 75px 0 0 0;
+          }
+
+          .placeholder {
+            position: absolute;
+            top: -22px;
+            left: 0;
+            right: 0;
+            padding: 0;
+            height: auto;
+            transition: all 0.2s ease;
+            font: 500 13px 'Montserrat';
+            color: #464646;
+
+            span {
+              font: inherit;
+              color: inherit;
+            }
+          }
+
+          .placeholder-time {
+            span {
+              display: inline;
+            }
+          }
+
+          .timezone {
+            margin: 8px 0 0;
+            font: 13px 'Montserrat';
+          }
+
+          span.select2 {
+            height: 49px;
+            width: 100% !important;
+            margin: 0 auto;
+            border: 1px solid #d8d6d4;
+            border-radius: 4px;
+
+            &.select2-container--open {
+              border: 1px solid var(--primary-color);
+
+              .select2-selection__arrow {
+                transform: scaleY(-1);
+              }
+            }
+
+            .selection {
+              .select2-container--default,
+              .select2-selection--single {
+                height: 47px;
+                border-radius: 4px;
+                border: none;
+
+                .select2-selection__rendered {
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  height: 100%;
+                  padding: 0 15px;
+                  font: 600 14px 'Montserrat';
+                  white-space: normal;
+                }
+
+                .select2-selection__arrow {
+                  width: 54px;
+                  height: 45px;
+                  // background: image-url('dezai/shared/select-arrow.svg') center center no-repeat;
+                  background-size: 14px 8px;
+
+                  b {
+                    border: none !important;
+                  }
+                }
+              }
+            }
+          }
+
+          input[type='text'] {
+            float: left;
+            background: transparent;
+            border-radius: 4px;
+            border: 1px solid #d8d6d4;
+            width: 100%;
+            height: 48px;
+            padding: 3px 12px 0;
+            font: 16px 'Montserrat';
+          }
+
+          input:required ~ .placeholder {
+            span::after {
+              content: '*';
+              font: inherit;
+              color: #f00;
+            }
+          }
+
+          .is-error {
+            border: 1px solid red !important;
+          }
+        }
+
+        input[type='text'],
+        input[type='email'],
+        input[type='password'] {
+          display: block;
+          width: 100%;
+          height: 68px;
+          padding: 0 0 0 23px;
+          font: 18px/47px 'Roboto Condensed';
+          text-align: left;
+          border: 1px solid #e8e8e8;
+        }
+
+        input.is-error {
+          border-color: red;
+        }
+
+        .submit-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: -16px 0 8px;
+          border: none;
+          border-radius: 20px;
+          height: 40px;
+          background-color: var(--primary-color);
+          background-image: none;
+          box-shadow: none;
+          font: 500 13px 'Montserrat';
+          letter-spacing: 0;
+          text-transform: none;
+          color: #fff;
+          cursor: pointer;
+          -webkit-appearance: none;
+        }
+
+        .agree {
+          text-align: center;
+          font: 13px 'Montserrat';
+
+          a {
+            color: var(--primary-color);
+          }
+        }
+      }
+
+      .communication {
+        margin: -11px 0 40px;
+
+        .name {
+          margin-bottom: 15px;
+          font: 16px 'Montserrat';
+          color: #7d7978;
+        }
+
+        input {
+          display: none;
+        }
+
+        input[type='checkbox'] + label {
+          position: relative;
+          display: block;
+          margin-bottom: 5px;
+          min-height: 32px;
+          padding: 7px 0 0 64px;
+          font: 16px 'Montserrat';
+          background-position: left 24px top;
+          background-size: 32px;
+          background-repeat: no-repeat;
+          cursor: pointer;
+
+          span {
+            font: 13px/22px 'Montserrat';
+            color: #7d7978;
+          }
+
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            box-sizing: border-box;
+            top: 7px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #d3cac3;
+            border-radius: 4px;
+            background-repeat: no-repeat;
+          }
+        }
+
+        input[type='checkbox']:checked + label {
+          &::before {
+            border: none;
+            background-color: var(--primary-color);
+            // background-image: image_url('dezai/shared/checkbox.svg');
+            background-size: 10px 8px;
+            background-position: center;
+          }
+        }
+
+        label.telegram {
+          // background-image: image_url('dezai/shared/telegram.svg');
+        }
+
+        label.whatsapp {
+          // background-image: image_url('dezai/shared/whatsapp.svg');
+        }
+
+        label.video {
+          // background-image: image_url('dezai/shared/video.svg');
+        }
+      }
+
+      .communication-error {
+        margin: 7px 0 -14px;
+        font: 12px 'Montserrat';
+        color: #f00;
+        text-align: center;
+      }
+    }
+  }
+
+  .wrap-request-done {
+    border-radius: 7px;
+    overflow: hidden !important;
+
+    .fancybox-close {
+      // background: image-url('dezai/shared/popup-close.svg') !important;
+      background-size: 34px !important;
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      width: 34px !important;
+      height: 34px !important;
+      top: 16px !important;
+      right: 16px !important;
+      border: none !important;
+      display: block !important;
+    }
+
+    #request_done {
+      max-width: 347px;
+      min-width: 347px;
+      padding: 100px 30px;
+      box-shadow: 10px 10px 0 0 rgba(255, 255, 255, 0.2);
+      text-align: left;
+      background: #fff;
+
+      .title {
+        padding: 88px 0 0 0;
+        font: 500 22px 'Montserrat';
+        text-transform: none;
+        // background: image-url('dezai/main/form/success.svg');
+        background-position: left top;
+        background-size: 64px;
+        background-repeat: no-repeat;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .subtitle {
+        display: block;
+        margin: 17px 0 0 0;
+        font: 16px/24px 'Montserrat';
+        text-align: left;
+      }
+
+      .social-links {
+        display: none;
+      }
+    }
+  }
+}
+
+.dezai-body.ctrl-main {
+  .select2-container {
+    z-index: 9002;
+
+    .select2-dropdown {
+      padding: 7px 12px;
+
+      .select2-results {
+        ul {
+          max-height: 250px;
+
+          li {
+            display: flex;
+            align-items: center;
+            border-radius: 6px;
+            height: 43px;
+            padding: 0 15px;
+            font: 16px 'Montserrat';
+            color: #3a3029;
+
+            &[aria-selected='true'] {
+              background-color: #fbfbfb !important;
+              color: var(--primary-color);
+            }
+
+            &.select2-results__option--highlighted {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

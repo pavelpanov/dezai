@@ -1,0 +1,282 @@
+@media screen and (max-width: 768px) {
+
+  header {
+    margin-bottom: 77px;
+    height: auto;
+
+    .container-menu {
+      height: 50px;
+
+      .in {
+        width: 100%;
+        padding: 0 20px;
+
+        .left {
+          .logo {
+            width: 93px;
+            height: 30px;
+          }
+
+          .menu {
+            display: none;
+          }
+        }
+
+        .right {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .phones,
+          a.soc {
+            display: none;
+          }
+
+          .lang-switch {
+            margin-right: 0;
+            padding-right: 20px;
+            font: 12px 'Montserrat';
+            background-size: 16px;
+            background-position: right 0 center;
+          }
+
+          .menu-mobile-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 24px 0 0;
+            margin-left: 24px;
+            height: 24px;
+            // background-image: image_url('dezai/shared/menu-burger.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            cursor: pointer;
+
+            &.opened {
+              // background-image: image_url('dezai/shared/menu-cross.svg');
+            }
+          }
+        }
+      }
+    }
+
+    .menu-mob {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: -218px;
+      right: 0;
+      left: 0;
+      height: auto;
+      padding: 84px 20px 32px;
+      background-color: #fff;
+      z-index: 2;
+      transition: all 0.2s ease;
+
+      &.opened {
+        top: 0;
+        transition: all 0.2s ease;
+      }
+
+      .phones {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 17px;
+
+        a.phone {
+          display: inline-flex;
+          align-items: center;
+          margin: 0;
+          padding-left: 30px;
+          height: 20px;
+          background-size: 21px 15px;
+          background-repeat: no-repeat;
+          background-position: left center;
+          font: 13px 'Montserrat';
+          text-decoration: none;
+          white-space: nowrap;
+
+          &.est {
+            margin-bottom: 21px;
+            // background-image: image_url('dezai/shared/flag-est.svg');
+          }
+
+          &.uk {
+            // background-image: image_url('dezai/shared/flag-uk.svg');
+          }
+
+          .ico {
+            display: inline-flex;
+            margin-left: 7px;
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+            background-position: right 0 top 0;
+            background-repeat: no-repeat;
+          }
+
+          .wa {
+            // background-image: image_url('dezai/shared/wa.svg');
+          }
+
+          .telegram {
+            // background-image: image_url('dezai/shared/telegram.svg');
+          }
+
+          .phone {
+            // background-image: image_url('dezai/shared/phone.svg');
+          }
+        }
+      }
+
+      .socs {
+        display: flex;
+        margin-top: 8px;
+
+        a.soc {
+          display: inline-flex;
+          flex: 32px 0 0;
+          height: 32px;
+          border-radius: 8px;
+          background-color: #faf7f6;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          &:not(:first-child) {
+            margin-left: 12px;
+          }
+        }
+
+        a.houzz {
+          // background-image: image_url('dezai/shared/houzz.svg');
+          background-size: 18px 20px;
+        }
+
+        a.pinterest {
+          // background-image: image_url('dezai/shared/pinterest.svg');
+          background-size: 20px;
+        }
+
+        a.facebook {
+          // background-image: image_url('dezai/shared/facebook.svg');
+          background-size: 18px;
+        }
+
+        a.instagram {
+          // background-image: image_url('dezai/shared/instagram.svg');
+          background-size: 18px;
+        }
+      }
+    }
+
+    .container {
+      padding: 10px 0 0;
+
+      .inner {
+        position: relative;
+        width: 100%;
+        padding: 0 20px;
+
+        .title {
+          margin-bottom: 16px;
+          font: 500 28px/36px 'Montserrat';
+
+          br {
+            display: none;
+          }
+        }
+
+        .subtitle {
+          margin-bottom: 33px;
+          padding-right: 0;
+          font: 14px/20px 'Montserrat';
+        }
+
+        a {
+          width: auto;
+          padding: 0 20px;
+        }
+
+        .menu-price {
+          display: inline-flex;
+          margin-top: 16px;
+          border: 1px solid #3a3029;
+          background-color: #fff;
+          font: 600 13px 'Montserrat';
+          color: #3a3029;
+
+          &:hover {
+            background-color: #fff;
+          }
+        }
+
+        .header-slider-mini {
+          right: auto;
+          left: 20px;
+          top: auto;
+          width: 171px;
+          height: 171px;
+          bottom: -338px;
+          transition: opacity 0.2s;
+
+          li {
+            padding: 25px 0 0 24px;
+            font: 600 14px 'Montserrat';
+
+            .price {
+              margin-top: 9px;
+              font: 600 32px 'Montserrat';
+            }
+          }
+
+          .slider-arrow {
+            top: 135px;
+            width: 24px;
+            height: 24px;
+          }
+
+          .slider-prev {
+            left: 24px;
+          }
+
+          .slider-next {
+            left: 60px;
+          }
+        }
+      }
+
+      .header-slider {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 32px;
+        width: 100%;
+        height: 220px;
+        transition: opacity 0.2s;
+
+        li {
+          width: 100%;
+          img {
+            height: 220px;
+          }
+        }
+      }
+    }
+
+    &.header-simple {
+      padding-bottom: 0;
+
+      .phone-lang-mobile {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .header-dezai-simple {
+    margin-bottom: 0;
+    height: 50px;
+    padding-top: 0;
+  }
+}

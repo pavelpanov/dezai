@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 768px) {
+  .document {
+    .container {
+      margin: 25px auto 20px;
+
+      h1 {
+        margin: 0 0 23px;
+        font: 700 26px "Roboto Condensed";
+      }
+
+      h2 {
+        margin: 25px 0 15px;
+        font: 700 18px "Roboto Condensed";
+      }
+
+      h3 {
+        margin: 13px 0 5px;
+        font: 700 18px "Roboto Condensed";
+      }
+
+      p {
+        font: 15px/20px "Roboto Condensed";
+      }
+    }
+  }
+}

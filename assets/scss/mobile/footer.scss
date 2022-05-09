@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {
+
+  footer#dezai-footer {
+    padding: 24px 0;
+
+    .container {
+      display: block;
+
+      .left {
+        display: block;
+        margin-bottom: 24px;
+        height: auto;
+
+        a.logo {
+          margin-right: 0;
+          margin-bottom: 20px;
+          width: 84px;
+          height: 27px;
+        }
+
+        .copyright {
+          font: 12px/18px 'Montserrat';
+        }
+      }
+
+      .right {
+        display: block;
+
+        .phone {
+          position: relative;
+          left: 0;
+          margin: 0 0 24px 0;
+        }
+
+        .links {
+          a {
+            display: block;
+            font: 12px/18px 'Montserrat';
+
+            &:not(:last-child) {
+              margin-right: 0;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cookies-dezai {
+    height: auto;
+    padding: 21px 0;
+
+    .container {
+      display: block;
+      height: auto;
+
+      .txt {
+        margin-bottom: 15px;
+        padding-right: 0;
+        font: 12px/18px 'Montserrat';
+      }
+
+      .accept {
+        flex: none;
+        width: 190px;
+      }
+    }
+  }
+}

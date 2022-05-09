@@ -1,0 +1,32 @@
+@import './desktop/main/adventages.scss';
+@import './desktop/main/compare.scss';
+@import './desktop/main/form.scss';
+@import './desktop/main/header.scss';
+@import './desktop/main/how_we_work.scss';
+@import './desktop/main/include.scss';
+@import './desktop/main/portfolio.scss';
+@import './desktop/main/prices.scss';
+@import './desktop/main/pricing.scss';
+@import './desktop/main/reviews.scss';
+@import './desktop/main/sample.scss';
+@import './desktop/footer.scss';
+@import './desktop/popups.scss';
+@import './shared/hosts/desktop/document.scss';
+@import './shared/hosts/desktop/footer.scss';
+@import './shared/hosts/desktop/global.scss';
+@import './shared/hosts/desktop/popups.scss';
+@import './shared/hosts/slider.scss';
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none;
+}
+
+* {
+  -webkit-appearance: none;
+  text-decoration-skip-ink: none;
+}

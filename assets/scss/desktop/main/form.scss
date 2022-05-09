@@ -1,0 +1,286 @@
+.dezai-contact-form {
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.form {
+  position: relative;
+  margin: 0;
+  border-radius: 7px;
+  width: 331px;
+  padding: 24px;
+  background: #fff;
+  overflow: hidden;
+
+  * {
+    color: #3a3029;
+  }
+
+  .form-title {
+    position: relative;
+    margin-bottom: 6px;
+    font: 500 22px/28px 'Montserrat';
+    letter-spacing: -0.01em;
+  }
+
+  .form-subtitle {
+    margin-bottom: 47px;
+    font: 16px/24px 'Montserrat';
+    letter-spacing: -0.01em;
+  }
+
+  .input-block {
+    position: relative;
+    height: 48px;
+    margin: 0 auto 40px;
+    width: 100%;
+
+    .placeholder {
+      position: absolute;
+      top: -24px;
+      left: 0;
+      right: 0;
+      padding: 0;
+      height: auto;
+      transition: all 0.2s ease;
+      font: 500 13px 'Montserrat';
+      color: #464646;
+
+      span {
+        color: #f00;
+      }
+    }
+
+    input[type='text'] {
+      float: left;
+      background: transparent;
+      border-radius: 4px;
+      border: 1px solid #d8d6d4;
+      width: 100%;
+      height: 48px;
+      padding: 3px 12px 0;
+      font: 500 16px 'Montserrat';
+    }
+
+    // input[type='text']::-webkit-input-placeholder {
+    //   color: #828f9e;
+    // }
+
+    // input[type='text']::-moz-placeholder {
+    //   color: #828f9e;
+    // }
+
+    input.focused {
+      // padding: 17px 18px 0px;
+      // transition: all 0.2s ease;
+    }
+
+    .has-error {
+      border: 1px solid red !important;
+    }
+
+    span.select2 {
+      height: 49px;
+      width: 100% !important;
+      margin: 0 auto;
+      border: 1px solid #d8d6d4;
+      border-radius: 4px;
+
+      &.select2-container--open {
+        border: 1px solid var(--primary-color);
+
+        .select2-selection__arrow {
+          transform: scaleY(-1);
+        }
+      }
+
+      .selection {
+        .select2-container--default,
+        .select2-selection--single {
+          height: 47px;
+          border-radius: 4px;
+          border: none;
+
+          .select2-selection__rendered {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 0 23px;
+            font: 600 14px 'Montserrat';
+            white-space: normal;
+          }
+
+          .select2-selection__arrow {
+            width: 54px;
+            height: 45px;
+            // background: image-url('dezai/shared/select-arrow.svg') center center no-repeat;
+            background-size: 14px 8px;
+
+            b {
+              border: none !important;
+            }
+          }
+        }
+      }
+    }
+
+    .timezone {
+      margin: 8px 0 0;
+      font: 13px 'Montserrat';
+    }
+  }
+
+  .communication {
+    margin: 52px 0 40px;
+
+    .name {
+      margin-bottom: 16px;
+      font: 16px 'Montserrat';
+      color: #7d7978;
+    }
+
+    input {
+      display: none;
+    }
+
+    input[type='checkbox'] + label {
+      position: relative;
+      display: block;
+      margin-bottom: 4px;
+      min-height: 32px;
+      padding: 7px 0 0 64px;
+      font: 16px 'Montserrat';
+      background-position: left 24px top;
+      background-size: 32px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+
+      span {
+        font: 13px/22px 'Montserrat';
+        color: #7d7978;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        top: 7px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #d3cac3;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    input[type='checkbox']:checked + label {
+      &::before {
+        border: none;
+        background-color: var(--primary-color);
+        // background-image: image_url('dezai/shared/checkbox.svg');
+        background-size: 10px 8px;
+        background-position: center;
+      }
+    }
+
+    label.telegram {
+      // background-image: image_url('dezai/shared/telegram.svg');
+    }
+
+    label.whatsapp {
+      // background-image: image_url('dezai/shared/whatsapp.svg');
+    }
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -16px 0 8px;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    background-color: var(--primary-color);
+    font: 500 13px 'Montserrat';
+    color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+
+  .agree {
+    text-align: center;
+    font: 13px 'Montserrat';
+
+    a {
+      color: var(--primary-color);
+    }
+  }
+
+  .communication-error {
+    position: absolute;
+    bottom: 6px;
+    font: 12px 'Montserrat';
+    color: #f00;
+    text-align: center;
+  }
+
+  .success_mess {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 200px 0 0 32px;
+    transition: z-index 0.25s step-end, opacity 0.25s ease-in-out,
+      background 0.25s ease-in-out, padding 0.25s ease-in-out;
+
+    .success-title {
+      padding: 88px 0 0 0;
+      font: 500 22px 'Montserrat';
+      // background: image-url('dezai/main/form/success.svg');
+      background-position: left top;
+      background-size: 64px;
+      background-repeat: no-repeat;
+    }
+
+    span {
+      display: block;
+      margin: 17px 0 0 0;
+      font: 16px/24px 'Montserrat';
+    }
+
+    .close {
+      position: absolute;
+      top: 1px;
+      right: 20px;
+      width: 18px;
+      height: 18px;
+      border: none;
+      // background: image-url('dezai/main/form/success-close.svg');
+      background-size: 18px;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+
+  .visible {
+    z-index: 9003;
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+    padding: 222px 0 0 32px;
+
+    .close {
+      top: 20px;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px) {
+
+  .pricing {
+    padding: 49px 0 40px;
+
+    .container {
+      .title {
+        margin-bottom: 15px;
+        font: 24px/32px 'Montserrat';
+        font-weight: 500;
+
+        span {
+          font: 24px/32px 'Montserrat';
+          font-weight: 600;
+        }
+      }
+
+      .subtitle {
+        font: 14px/20px 'Montserrat';
+        margin-bottom: 25px;
+
+        span {
+          font: 14px 'Montserrat';
+          font-weight: bold;
+        }
+      }
+
+      .list {
+        display: block;
+
+        .item {
+          flex: none;
+          min-height: 48px;
+          padding: 0 0 0 64px;
+          background-size: 48px;
+
+          &:not(:last-child) {
+            margin-bottom: 32px;
+          }
+
+          .name {
+            font: 18px/24px 'Montserrat';
+            font-weight: 500;
+          }
+
+          .desc {
+            font: 14px/20px 'Montserrat';
+            color: #7d7978;
+          }
+
+          .icon {
+            font-size: 48px;
+          }
+        }
+      }
+    }
+  }
+}

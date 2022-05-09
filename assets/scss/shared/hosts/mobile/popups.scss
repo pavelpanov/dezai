@@ -1,0 +1,97 @@
+@media screen and (max-width: 768px) {
+
+  .fancybox-close {
+    background-size: 14px !important;
+    width: 14px !important;
+    height: 14px !important;
+    top: 12px !important;
+    right: 12px !important;
+  }
+
+  .popup {
+    padding: 29px 20px 39px;
+    max-width: 100%;
+    min-width: auto;
+    text-align: center;
+
+    .title {
+      display: block;
+      margin: 0 auto 8px;
+      font: 700 22px 'Roboto Condensed';
+      text-align: center;
+    }
+
+    .subtitle {
+      font: 16px/20px 'Roboto Condensed';
+      margin: 0 0 19px 0;
+    }
+
+    .form-row {
+      &:not(:last-child) {
+        margin: 0 0 12px 0;
+      }
+
+      &:last-child {
+        margin-top: 19px;
+      }
+
+      .input-block {
+        .placeholder {
+          padding: 9px 0 0 15px;
+          font: 16px/29px 'Roboto Condensed';
+
+          span:first-child {
+            display: none;
+          }
+
+          span:last-child {
+            display: block;
+          }
+        }
+
+        .placeholder-active {
+          height: 40%;
+          padding: 0 0 0 20px;
+          font: 13px/33px 'Roboto Condensed', sans-serif;
+        }
+
+        input.focused {
+          padding: 17px 18px 0px;
+          transition: all 0.2s ease;
+        }
+      }
+
+      input[type='text'],
+      input[type='email'],
+      input[type='password'] {
+        height: 50px;
+        padding: 0 0 0 23px;
+        font: 16px/47px 'Roboto Condensed';
+      }
+
+      .submit-btn {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #request_done {
+    padding: 77px 15px;
+
+    .title {
+      margin: 0 0 10px;
+      padding-top: 51px;
+      font: 700 22px 'Roboto Condensed';
+      background-size: 33px 22px;
+    }
+
+    .subtitle {
+      font: 16px/20px 'Roboto Condensed';
+
+      br {
+        display: none;
+      }
+    }
+  }
+}

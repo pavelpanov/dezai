@@ -1,0 +1,60 @@
+
+@media screen and (max-width: 768px) {
+  .prices {
+    padding: 50px 0 18px;
+
+    .container {
+      .title {
+        margin-bottom: 33px;
+        font: 500 24px 'Montserrat';
+      }
+
+      .list {
+        display: block;
+
+        .item {
+          flex: none;
+          margin-bottom: 30px;
+
+          img {
+            margin-bottom: 17px;
+            width: 100%;
+            height: auto;
+          }
+
+          .down {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+              .name {
+                font: 500 18px 'Montserrat';
+              }
+
+              .price {
+                margin-top: 4px;
+                font: 600 24px 'Montserrat';
+              }
+            }
+
+            a {
+              padding: 0 32px;
+            }
+          }
+        }
+
+        .item-payment {
+          padding: 48px 0 46px;
+
+          .box {
+            padding: 73px 40px 0;
+          }
+
+          span {
+            font: 14px/20px 'Montserrat';
+          }
+        }
+      }
+    }
+  }
+}
